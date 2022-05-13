@@ -48,6 +48,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"kubernetes-helm"
 ,"python"
 ,"powerbi"
+,"snagit"
 ,"lens") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
