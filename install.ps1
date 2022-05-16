@@ -3,16 +3,16 @@
 # npm -g i typescript ts-node
 
 
-dotnet tool install --global dotnet-reportgenerator-globaltool
-dotnet tool install --global dotnet-trace
-dotnet tool install --global dotnet-sonarscanner
-dotnet tool install --global dotnet-aspnet-codegenerator
-dotnet tool install --global dotnet-counters
-dotnet tool install --global dotnet-ef
-dotnet tool install --global dotnet-monitor
+#dotnet tool install --global dotnet-reportgenerator-globaltool
+#dotnet tool install --global dotnet-trace
+#dotnet tool install --global dotnet-sonarscanner
+#dotnet tool install --global dotnet-aspnet-codegenerator
+#dotnet tool install --global dotnet-counters
+#dotnet tool install --global dotnet-ef
+#dotnet tool install --global dotnet-monitor
 
-<# chocolatey setup #> 
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')); 
+#<# chocolatey setup #> 
+#Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')); 
 ​
 <# allowing globally confirmation #> 
 choco feature enable -n=allowGlobalConfirmation;
