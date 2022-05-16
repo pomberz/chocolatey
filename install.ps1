@@ -49,6 +49,8 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"python"
 ,"powerbi"
 ,"snagit"
+,"zoomit"
+,"lightshot"
 ,"lens") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
