@@ -25,7 +25,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"dotnetcore-sdk"
 ,"microsoft-edge"
 ,"visualstudio2022enterprise"
-
+,"powerautomatedesktop"
 ,"microsoft-windows-terminal"
 ,"azure-cli"
 ,"gh"
