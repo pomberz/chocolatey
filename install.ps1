@@ -44,6 +44,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"vim"
 ,"microsoft-teams"
 ,"terraform"
+,"sql-server-management-studio"
 ,"kubernetes-cli"
 ,"kubernetes-helm"
 ,"python"
