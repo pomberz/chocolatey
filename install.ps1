@@ -19,7 +19,8 @@ choco feature enable -n=allowGlobalConfirmation;
 
 <# poll #>
 @(
-"git"
+"python"
+/*"git"
 ,"dotnetcore-sdk"
 ,"dotnet-6.0-sdk"
 ,"dotnetcore-sdk"
@@ -52,7 +53,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"snagit"
 ,"zoomit"
 ,"lightshot"
-,"lens") + ($pins = @("vscode")) | % { choco install $_ };
+,"lens"*/) + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
 
