@@ -20,40 +20,7 @@ choco feature enable -n=allowGlobalConfirmation;
 <# poll #>
 @(
 "python"
-/*"git"
-,"dotnetcore-sdk"
-,"dotnet-6.0-sdk"
-,"dotnetcore-sdk"
-,"microsoft-edge"
-,"visualstudio2022enterprise"
-,"powerautomatedesktop"
-,"microsoft-windows-terminal"
-,"azure-cli"
-,"gh"
-,"azurepowershell"
-,"azcopy"
-,"wireshark"
-,"westwindwebsurge"
-,"sql-server-management-studio"
-,"robo3t"
-,"azure-data-studio"
-,"dbeaver"
-,"mobaxterm"
-,"nodejs-lts"
-,"nvm"
-,"postman"
-,"vim"
-,"microsoft-teams"
-,"terraform"
-,"sql-server-management-studio"
-,"kubernetes-cli"
-,"kubernetes-helm"
-,"python"
-,"powerbi"
-,"snagit"
-,"zoomit"
-,"lightshot"
-,"lens"*/) + ($pins = @("vscode")) | % { choco install $_ };
+) + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
 
